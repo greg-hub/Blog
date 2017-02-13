@@ -1,0 +1,147 @@
+
+#header {
+    margin: 0 auto;
+       background-color: #212020;
+
+    h1{
+        font-family: walkway_boldregular, Sans-Serif;
+        font-size: 3rem;
+        text-align: center;
+        background-color: #212020;
+        color: white;
+        padding-top: 0.4em;
+   
+    
+        }
+
+            
+            @include breakpoint ($tablet-portrait){
+                h1 {
+                    font-size: 4rem;
+                }
+         } // tablet
+
+            @include breakpoint ($desktop){
+
+                h1 {
+                    font-size: 5.5rem;
+                    padding-bottom: 0.4em;
+                }
+            }
+            
+
+} // header
+
+.Hide {
+    display: block;
+   margin: 0 auto;
+   color: #fff;
+   font-size: 2rem;
+   border-style: none;
+   background-color: #212020; 
+   padding-bottom: 0.5em;
+
+            @include breakpoint ($desktop){
+                display: none;
+            }
+   
+    
+}
+
+
+//Nav 
+
+nav {
+    display: block;
+    list-style: none;
+    width: 100%;
+    color:  #fff;
+    background-color: #212020;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin: 0 auto;
+
+  
+}
+
+nav ul {
+    text-align: center;
+    background-color: #212020;
+    width: 100%;
+      
+
+
+    
+}
+
+nav li {
+    font-family: walkway_boldregular, Sans-Serif;
+    font-size: 1.2rem;
+   letter-spacing: 1px;
+    display: inline-block;
+    padding-bottom: 1.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+
+             @include breakpoint ($desktop){
+                    padding-bottom: 2em;
+             }    
+
+  
+
+}
+
+nav a {
+    color:#fff;
+    text-decoration: none;
+    // border-radius: 8px;
+    // border: 2px solid #fff;
+    padding: 0.5em 1.5em;
+    margin: 0 auto;
+      border-radius: 8px;
+
+}
+
+a.active {
+    color:#fff;
+    text-decoration: none;
+    background: #0e0e0e;
+    // border-radius: 8px;
+    // border: 2px solid #fff;
+    padding: 0.5em 1.5em;
+    outline: none; 
+ 
+}
+
+a:hover {
+    background: #0e0e0e;
+    
+}
+
+button:focus {
+    outline:0;
+
+}
+
+.hidden {
+    display: none;
+            
+             @include breakpoint ($tablet-portrait){
+                     .hidden {
+                        display: none;
+                    }
+            }  // tablet
+
+            
+            @include breakpoint ($desktop){
+                display: block !important;
+            } // desktop   
+
+} //hidden
+
+.hide {
+     @include breakpoint ($desktop){
+         display: none;
+     }
+}
+
