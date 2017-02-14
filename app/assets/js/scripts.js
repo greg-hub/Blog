@@ -7,6 +7,7 @@
  * Copyright 2017. MIT licensed.
  */
 // hide Nav
-    $("button").click(function(){
+    $(".Hide").click(function(){
         $(".hidden").slideToggle("fast");
     });
+

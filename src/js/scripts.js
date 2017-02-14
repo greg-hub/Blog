@@ -1,4 +1,5 @@
 // hide Nav
-    $("button").click(function(){
+    $(".Hide").click(function(){
         $(".hidden").slideToggle("fast");
     });
+

@@ -102,18 +102,16 @@ nav a {
 
 }
 
-a.active {
+.hidden a.active {
     color:#fff;
     text-decoration: none;
     background: #0e0e0e;
-    // border-radius: 8px;
-    // border: 2px solid #fff;
     padding: 0.5em 1.5em;
     outline: none; 
  
 }
 
-a:hover {
+.hidden a:hover {
     background: #0e0e0e;
     
 }
