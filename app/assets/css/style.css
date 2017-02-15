@@ -10,6 +10,9 @@
   font-weight: normal;
   font-style: normal; }
 
+.Sticky {
+  min-height: calc(100vh - 3em); }
+
 #header {
   margin: 0 auto;
   background-color: #212020; }
@@ -27,6 +30,9 @@
     #header h1 {
       font-size: 5.5rem;
       padding-bottom: 0.4em; } }
+  #header h1 a {
+    text-decoration: none;
+    color: #fff; }
 
 .Hide {
   display: block;
@@ -155,7 +161,8 @@ body {
     color: #373D3F;
     padding-top: 0.5em;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 1.3em; }
     @media (min-width: 600px) {
       .info p {
         width: 80%;
@@ -200,3 +207,37 @@ h4 a {
 hr {
   margin-top: 1em;
   opacity: 0.3; }
+
+.about h2 {
+  color: #373D3F;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1em; }
+
+.about h5 {
+  font-family: 'Ubuntu', sans-serif;
+  width: 80%;
+  font-weight: 500;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 1em;
+  line-height: 1.3em; }
+
+@media (min-width: 600px) {
+  .about h5 {
+    width: 70%; } }
+
+@media (min-width: 1025px) {
+  .about {
+    padding-top: 2em; }
+    .about h2 {
+      font-size: 3rem; }
+    .about h5 {
+      width: 55%;
+      text-align: left;
+      font-size: 1.1rem;
+      padding-top: 2em; } }
